@@ -8,18 +8,18 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    font-weight: 400; /* Regular */
+    font-weight: 400; 
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 100%);
     line-height: 1.6;
 }
 
 h1, h2 {
-    font-weight: 700; /* Bold */
+    font-weight: 700; 
 }
 
 strong {
-    font-weight: 600; /* Semi-bold */
+    font-weight: 600;
 }
 
 .Container {
@@ -32,7 +32,7 @@ strong {
     padding: 20px;
     margin-top: 80px;
     margin-bottom: 80px;
-    transition: all 0.3s ease; /* Smooth resizing */
+    transition: all 0.3s ease; 
 }
 
 span {
@@ -43,8 +43,8 @@ span {
     width: 80%;
     margin: auto;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
+    justify-content: center; 
+    align-items: center;     
     height: 200px; 
 }
 
@@ -79,35 +79,35 @@ img {
     background-color: hsl(75, 94%, 57%);
     cursor: pointer;
 }
+.links a:hover{
+    color: hsl(0, 0%, 12%);
+}
 
-/* Media Queries for Responsive Design */
-
-/* For smaller devices like tablets (width 768px and below) */
 @media (max-width: 768px) {
     .Container {
-        width: 50%; /* Wider container for smaller screens */
+        width: 50%;
         margin-top: 60px;
         margin-bottom: 60px;
     }
 
     img {
-        width: 70%; /* Resize image for smaller screens */
+        width: 70%; 
     }
 
     .texts .links li {
-        width: 100%; /* Full width for list items */
+        width: 100%; 
     }
 }
 
-/* For mobile devices (width 480px and below) */
+
 @media (max-width: 480px) {
     .Container {
-        width: 80%; /* Even wider for mobile screens */
+        width: 80%; 
         padding: 30px;
     }
 
     img {
-        width: 80%; /* Larger image on mobile */
+        width: 80%;
     }
 
     .texts .links li {
