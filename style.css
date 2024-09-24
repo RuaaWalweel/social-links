@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* Regular */
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-weight: 700; /* Bold */
+}
+
+strong {
+    font-weight: 600; /* Semi-bold */
+}
+
+.Container {
+    width: 30%;
+    height: fit-content;
+    padding: 50px;
+    margin: auto;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    transition: all 0.3s ease; /* Smooth resizing */
+}
+
+span {
+    color: hsl(75, 94%, 57%);
+}
+
+.img {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 200px; 
+}
+
+img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.texts {
+    text-align: center;
+}
+
+.texts ul {
+    list-style: none;
+}
+
+.texts .links li {
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    margin: 12px;
+    text-transform: capitalize;
+}
+
+.texts .links a {
+    text-decoration: none;
+    color: white;
+}
+
+.texts li:hover {
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For smaller devices like tablets (width 768px and below) */
+@media (max-width: 768px) {
+    .Container {
+        width: 50%; /* Wider container for smaller screens */
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    img {
+        width: 70%; /* Resize image for smaller screens */
+    }
+
+    .texts .links li {
+        width: 100%; /* Full width for list items */
+    }
+}
+
+/* For mobile devices (width 480px and below) */
+@media (max-width: 480px) {
+    .Container {
+        width: 80%; /* Even wider for mobile screens */
+        padding: 30px;
+    }
+
+    img {
+        width: 80%; /* Larger image on mobile */
+    }
+
+    .texts .links li {
+        padding: 8px;
+        margin: 8px;
+    }
+}
